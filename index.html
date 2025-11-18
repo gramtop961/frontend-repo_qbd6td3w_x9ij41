@@ -2,17 +2,88 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flames App</title>
-    <link rel="icon" type="image/x-icon" href="favicon.svg">
+
+    <title>MYRVEX — Global Creative Web Builder | Anti‑Mainstream, Asymmetric, High‑Conversion</title>
+    <meta name="description" content="MYRVEX is a global creative web builder firm crafting anti‑mainstream, asymmetric websites with kinetic interactions that drive international growth. Free growth audit for businesses worldwide." />
+    <meta name="keywords" content="web builder, creative agency, asymmetric design, GSAP, AOS, Spline 3D, global growth, CRO, SEO, international business" />
+    <meta name="author" content="MYRVEX" />
+    <link rel="canonical" href="/" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MYRVEX — Global Creative Web Builder" />
+    <meta property="og:description" content="Anti‑mainstream web experiences that convert. Ignite global growth — get a free audit now." />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MYRVEX — Global Creative Web Builder" />
+    <meta name="twitter:description" content="Asymmetric, interactive web systems for global brands. Free audit available." />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-sans/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-mono/style.css">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+    <!-- Global site tag (Analytics placeholder) -->
+    <!-- Replace GA_MEASUREMENT_ID with your property ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+
+    <!-- Structured Data: Organization & WebSite -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MYRVEX",
+        "url": "https://example.com/",
+        "logo": "https://example.com/logo.png",
+        "sameAs": [
+          "https://www.linkedin.com/company/myrvex",
+          "https://twitter.com/myrvex"
+        ],
+        "description": "Global creative web builder firm crafting anti‑mainstream, asymmetric websites with kinetic interactions."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "MYRVEX",
+        "url": "https://example.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://example.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
   </head>
   <body>
+    <!-- Accessible skip link target -->
     <div id="root"></div>
+
+    <!-- GSAP & AOS via CDN for interactions -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" integrity="sha256-3JwG2Zlqgk5bQd3vQ0oYlg2tQZcFVJr2n8qQ6w3nL1U=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     <script type="module" src="/src/main.jsx"></script>
+    <noscript>MYRVEX uses motion and progressive enhancement. For best experience enable JavaScript.</noscript>
   </body>
 </html>
